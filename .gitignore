@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.blg
+*.log
+.DS_Store
+resume.brf
+resume.lof
+resume.log.errors
+resume.lot
+resume.out
+resume.pdf
+resume.synctex.gz
+resume.toc

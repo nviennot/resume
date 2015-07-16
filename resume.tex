@@ -1,0 +1,246 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Nicolas Viennot -- Resume},
+  pdfauthor={Nicolas Viennot},
+  colorlinks=true,
+  % citecolor=blue,
+}
+
+\renewcommand\UrlFont{\color{teal}\rmfamily\itshape}
+
+
+\newcommand{\columbia}{{Columbia University}\xspace}
+\newcommand{\supelec}{{Sup\'{e}lec}\xspace}
+\newcommand{\eiffel}{{Lyc\'{e}e Gustave Eiffel}\xspace}
+
+\name{Nicolas Viennot}
+\address{nicolas@viennot.com \\ New York, NY \\ 646-504-6464}
+
+\begin{document}
+
+\vspace{-1em}
+
+%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{\columbia}{2010 -- Expected Dec. 2015}{Ph.D. in Computer Science}{New York, NY}
+\item Advisor: Jason Nieh.
+\item Thesis: Record-Replay Mechanisms Applied to Operating Systems and Distributed Systems.
+\end{rSubsection}
+
+\begin{rSubsection}{\columbia}{2007 -- 2009}{M.S. in Computer Science}{New York, NY}
+\item Focus areas: Operating Systems, Security, Networking, Programming Languages.
+\item GPA: 4.07/4.00
+\end{rSubsection}
+
+\begin{rSubsection}{\supelec}{2005 -- 2007}{Engineering Degree}{Paris, France}
+\item \supelec is a top-ranked {\em Grande \'{E}cole} in France.
+\item Focus areas: Signal Processing, Computer Science, Economics, Electronic and Power Engineering.
+\end{rSubsection}
+
+% \begin{rSubsection}{\eiffel}{2003 -- 2005}{Preparatory School}{Bordeaux, France}
+% \item Intensive two-year program preparing to Engineering Schools competitive entrance.
+% \item Focus areas: Mathematics, Physics, System Engineering.
+% \end{rSubsection}
+
+\end{rSection}
+
+%%%%%%%%%%%%%%%%%
+% Experience
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Work Experience}
+
+% \begin{rSubsection}{NimbleDroid}{2014 -- 2015}{Full Stack Developer}{New York, NY}
+% \item XXXX
+% \end{rSubsection}
+
+\begin{rSubsection}{Crowdtap}{2012 -- 2013}{System Engineer}{New York, NY}
+\item Implemented Synapse at Crowdtap, a startup with over 500,000 users. Synapse interconnects dozen of their services.
+\item Synapse is an easy-to-use, strong-semantics system for large-scale, data-driven Web service integration.
+   Synapse lets independent services cleanly share data with each other in an isolated and scalable way.
+\item Synapse uses causal consistency under the hood. Synapse was benchmarked on 1,000 AWS servers.
+\end{rSubsection}
+
+% \begin{rSubsection}{Cellrox}{2012}{System Engineer}{New York, NY}
+% \item Cellrox provides mobile phone virtualization solutions. Developed a web-based tool that manages the fleet of devices.
+% \item The tool was deployed on companies' premises, removing any hopes of using 3rd party services.
+% \end{rSubsection}
+
+% \begin{rSubsection}{SaiMaa}{Fall 2010}{Project Manager}{New York, NY}
+% \item Implemented their event registration and bookstore systems to capture \$0.5M in revenue.
+% \item Hired contractors to join forces on the project. Supervised developers with an Agile methodology.
+% \end{rSubsection}
+
+\begin{rSubsection}{ASDLabs}{2009 -- 2010}{Full Stack Developer}{New York, NY}
+\item Involved in dozens of projects, primarily in the health-care and financial
+      industries. Tasks included business analysis, project planning, application
+      design and development. Often brought creative solutions to the table to cut costs.
+\item Dramatically improved internal company processes by training employees to
+      leverage project management tools including centralized file sharing and source revision control systems.
+% \item Unsuccessful in converting the company's focus from PHP and .NET to Django or Rails.
+\end{rSubsection}
+
+\begin{rSubsection}{Columbia University}{Fall 2009}{Teaching Assistant}{New York, NY}
+\item Lead Teaching Assistant in Prof. Jason Nieh's notoriously rigorous Operating System class (70 students).
+% \item Brought innovative additions to the teaching workflow and student professor interactions by implementing revision
+% control systems and virtual appliances.
+\item Responsible for creating homework assignments, creating scoring rubrics, grading,
+individual demos, managing repositories for students, and answering questions on an online board (posted more
+than 1000 messages during the semester).
+% \item Anonymous comments from students: \url{http://viennot.biz/os1.comments.txt}
+\end{rSubsection}
+
+\begin{rSubsection}{EDIMS}{Summer 2006}{Developer}{New York, NY}
+\item Fixed memory leaks in the main product (2.5M lines of code)
+      resulting in no longer having to reboot computers daily in hospitals.
+      These leaks were discovered in 3 days. Previously hired contractors were unable to find them in 3 months.
+
+      % previously hired contractors failed to isolate problem after 3 month endeavor.
+
+\item Developed a patient chart editor for emergency rooms in hospitals.
+\end{rSubsection}
+
+\begin{rSubsection}{\supelec}{Spring 2006}{Software Engineer}{Paris, France}
+\item Installed inexpensive servers to broadcast national TV channels coming
+      from DVB-T adapters over the campus network using IP multicast,
+      reaching over 600 students. This service has been maintained by students over
+      the years.
+\end{rSubsection}
+
+\begin{rSubsection}{VIBI Prod.}{Winter 2004}{Hardware and Software Engineer}{New York, NY}
+\item Designed a radio interface for a USB tablet hidden in a clipboard to be used by professional magicians.
+\item The main difficulty was to reverse engineer the tablet drivers to understand its proprietary tablet protocol.
+\end{rSubsection}
+
+\begin{rSubsection}{Elegenics Inc.}{Summer 2003}{Hardware and Software Engineer}{Mountain View, CA}
+\item Designed the software stack in C++ and C\#. It controls a 5-axis
+      robot, a bar-code reader, and a servomotor to select microscope lenses.
+      It detects hundreds of petri dishes and places them under the
+      microscope to capture micro-organisms.
+\item Designed a custom electronic board to connect the different hardware components.
+\end{rSubsection}
+
+\end{rSection}
+
+%%%%%%%%%%%%%%%%%
+% Research Projects
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Personal and Research Projects}
+\begin{rSubsection}{NoBrainer}{2012 -- Present}{Ruby ORM for RethinkDB}{\url{http://nobrainer.io/}}
+\item After too many frustrating experiences with ActiveRecord or Mongoid due to
+  inconsistent APIs and weak semantics, I decided to make my own ORM (Object Relational Mapper).
+  The design goal is to allow quick application prototyping, while providing a rock-solid production experience.
+  API design is one of the most difficult aspect of the project.
+\end{rSubsection}
+
+\clearpage
+
+\begin{rSubsection}{tmate.io}{2013 -- Present}{Instant Terminal Sharing}{\url{http://tmate.io/}}
+\item tmate is a tmux fork (terminal multiplexer) coded in C. It allows to share
+  terminals very easily and securely. tmate is mostly used for pair-programming.
+      More than a thousand paired sessions are seen each week.
+\item tmate is sponsored by DigitalOcean and deployed on 6 different geographic locations for optimal latency.
+\end{rSubsection}
+
+\begin{rSubsection}{PlayDrone}{2012 -- 2014}{Google Play Crawler}{\url{https://github.com/nviennot/playdrone}}
+\item PlayDrone is the first scalable Google Play store crawler. We used it to index and analyze over 1.1M applications.
+\item We discovered numerous OAuth credential leaks. We communicated with Facebook,
+    Google and Amazon to mitigate the issues, making the Google Play store a safer place.
+\item PlayDrone was used at archive.org to provide a full dump of the Google Play market for other researchers.
+\end{rSubsection}
+
+\begin{rSubsection}{Scribe}{2008 -- 2012}{Deterministic Record-Replay Engine}{\url{https://github.com/nviennot/linux-2.6-scribe}}
+\item Scribe is a transparent, deterministic application execution record-replay mechanism operating at the kernel level.
+\item We used Scribe to build RacePro and Dora. Racepro is a system for detecting harmful process races in deployed systems.
+Dora is a mutable replay engine which enables reproducing non-deterministic bugs with retroactive debugging.
+\end{rSubsection}
+
+\begin{rSubsection}{Reflow Oven}{2004 -- 2005}{\url{http://viennot.com/reflow\_oven.pdf}}{}
+\item Designed a standalone reflow oven used to solder components on a circuit board from scratch.
+\item The oven features 2kW of infrared heat, controlled with a PID feedback loop.
+\end{rSubsection}
+
+% \item reverse engineering
+% \item github, contributed to numerous open source proj
+\end{rSection}
+
+%%%%%%%%%%%%%%%%%
+% Awards and Patents
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Awards and Patents}
+\begin{rList}
+\item Kenneth C. Sevcik Outstanding Student Paper Award for ``{\em A Measurement Study of Google Play}'' (SIGMETRICS '14).
+\item US Patent 8402318: Systems and methods for recording and replaying application execution.
+\end{rList}
+\end{rSection}
+
+%%%%%%%%%%%%%%%%%
+% Publications
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Selected Publications}
+\newcounter{itemcounter}
+\begin{list}{\arabic{itemcounter}.}{\usecounter{itemcounter}\leftmargin=0em}
+\newenvironment{pub}[5]{ {\bf #1} \\ #2, {\em #3 (#4)}, #5}
+
+\item \pub{Synapse: A Microservices Architecture for Heterogeneous-Database Web Applications}
+{Nicolas Viennot, Mathias L\'{e}cuyer, Jonathan Bell, Roxana Geambasu, Jason Nieh}
+{Proceedings of the 10th European Conference on Computer Systems}
+{EuroSys '15}{Bordeaux, France, April 2015.}
+
+\item \pub{A Measurement Study of Google Play}
+{Nicolas Viennot, Edward Garcia, and Jason Nieh}
+{Proceedings of the 2014 ACM International Conference on Measurement and Modeling of Computer Systems}
+{SIGMETRICS '14}{Austin, TX, June 2014. (Kenneth C. Sevcik Outstanding Student Paper Award.)}
+
+% \item \pub{Cider: Native Execution of iOS Apps on Android}
+% {Jeremy Andrus, Alexander Van't Hof, Naser AlDuaij, Christoffer Dall, Nicolas Viennot, and Jason Nieh}
+% {Proceedings of the 19th International Conference on Architectural Support for Programming Languages and Operating Systems}
+% {ASPLOS '14}{Salt Lake City, UT, March 2014.}
+
+\item \pub{Transparent Mutable Replay for Multicore Debugging and Patch Validation}
+{Nicolas Viennot, Sid Nair, and Jason Nieh}
+{Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems}
+{ASPLOS '13}{Houston, TX, March 2013.}
+
+\item \pub{Pervasive Detection of Process Races in Deployed Systems}
+{Oren Laadan, Nicolas Viennot, Chia-Che Tsai, Chris Blinn, Junfeng Yang, and Jason Nieh}
+{Proceedings of the 23rd ACM Symposium on Operating Systems Principles}
+{SOSP '11}{Cascais, Portugal, October 2011.}
+
+\item \pub{Transparent, Lightweight Application Execution Replay on Commodity Multiprocessor Operating Systems}
+{Oren Laadan, Nicolas Viennot, Jason Nieh}
+{Proceedings of the 2010 ACM International Conference on Measurement and Modeling of Computer Systems}
+{SIGMETRICS '10}{New York, NY, June 2010.}
+
+\item \pub{ASSURE: Automatic Software Self-healing Using REscue points}
+{Stelios Sidiroglou, Oren Laadan, Carlos Perez, Nicolas Viennot, Jason Nieh, Angelos D. Keromytis}
+{Proceedings of the 14th International Conference on Architectural Support for Programming Languages and Operating Systems}
+{ASPLOS '09}{Washington, DC, March 2009.}
+
+\end{list}
+\end{rSection}
+
+%%%%%%%%%%%%%%%%%
+% Skills
+%%%%%%%%%%%%%%%%%
+
+\begin{rSection}{Skills}
+\begin{rList}
+\item Strongest programming languages: Ruby, C, JavaScript, HTML/CSS, Python, x86 assembly.
+\item Hobbies: Photography
+\item Native French speaker, fluent in English.
+\end{rList}
+\end{rSection}
+
+\end{document}
