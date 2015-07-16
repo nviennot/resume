@@ -3,6 +3,7 @@
 \usepackage{xspace}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{gensymb}
 \hypersetup{
   pdftitle={Nicolas Viennot -- Resume},
   pdfauthor={Nicolas Viennot},
@@ -42,7 +43,7 @@
 
 \begin{rSubsection}{\supelec}{2005 -- 2007}{Engineering Degree}{Paris, France}
 \item \supelec is a top-ranked {\em Grande \'{E}cole} in France.
-\item Focus areas: Signal Processing, Computer Science, Economics, Electronic and Power Engineering.
+\item Focus areas: Computer Science, Signal Processing, Electronic, Power Engineering, and Economics.
 \end{rSubsection}
 
 % \begin{rSubsection}{\eiffel}{2003 -- 2005}{Preparatory School}{Bordeaux, France}
@@ -64,9 +65,10 @@
 
 \begin{rSubsection}{Crowdtap}{2012 -- 2013}{System Engineer}{New York, NY}
 \item Implemented Synapse at Crowdtap, a startup with over 500,000 users. Synapse interconnects dozen of their services.
-\item Synapse is an easy-to-use, strong-semantics system for large-scale, data-driven Web service integration.
-   Synapse lets independent services cleanly share data with each other in an isolated and scalable way.
-\item Synapse uses causal consistency under the hood. Synapse was benchmarked on 1,000 AWS servers.
+% \item Synapse is an easy-to-use, strong-semantics system for large-scale, data-driven Web service integration.
+\item Synapse lets independent services cleanly share data with each other with 
+an easy-to-use publish/subscribe API.
+\item Synapse transparently synchronizes heterogeneous databases with causal consistency semantics in a scalable manner.
 \end{rSubsection}
 
 % \begin{rSubsection}{Cellrox}{2012}{System Engineer}{New York, NY}
@@ -111,11 +113,10 @@ than 1000 messages during the semester).
 \begin{rSubsection}{\supelec}{Spring 2006}{Software Engineer}{Paris, France}
 \item Installed inexpensive servers to broadcast national TV channels coming
       from DVB-T adapters over the campus network using IP multicast,
-      reaching over 600 students. This service has been maintained by students over
-      the years.
+      reaching over 600 students. This service is still running today.
 \end{rSubsection}
 
-\begin{rSubsection}{VIBI Prod.}{Winter 2004}{Hardware and Software Engineer}{New York, NY}
+\begin{rSubsection}{VIBI Prod.}{Winter 2004}{Hardware and Software Engineer}{Bordeaux, France}
 \item Designed a radio interface for a USB tablet hidden in a clipboard to be used by professional magicians.
 \item The main difficulty was to reverse engineer the tablet drivers to understand its proprietary tablet protocol.
 \end{rSubsection}
@@ -135,14 +136,6 @@ than 1000 messages during the semester).
 %%%%%%%%%%%%%%%%%
 
 \begin{rSection}{Personal and Research Projects}
-\begin{rSubsection}{NoBrainer}{2012 -- Present}{Ruby ORM for RethinkDB}{\url{http://nobrainer.io/}}
-\item After too many frustrating experiences with ActiveRecord or Mongoid due to
-  inconsistent APIs and weak semantics, I decided to make my own ORM (Object Relational Mapper).
-  The design goal is to allow quick application prototyping, while providing a rock-solid production experience.
-  API design is one of the most difficult aspect of the project.
-\end{rSubsection}
-
-\clearpage
 
 \begin{rSubsection}{tmate.io}{2013 -- Present}{Instant Terminal Sharing}{\url{http://tmate.io/}}
 \item tmate is a tmux fork (terminal multiplexer) coded in C. It allows to share
@@ -151,11 +144,20 @@ than 1000 messages during the semester).
 \item tmate is sponsored by DigitalOcean and deployed on 6 different geographic locations for optimal latency.
 \end{rSubsection}
 
+\clearpage
+
+\begin{rSubsection}{NoBrainer}{2012 -- Present}{Ruby ORM for RethinkDB}{\url{http://nobrainer.io/}}
+\item After too many frustrating experiences with ActiveRecord or Mongoid due to
+  inconsistent APIs and weak semantics, I decided to make my own ORM (Object Relational Mapper).
+  The design goal is to allow quick application prototyping, while providing a rock-solid production experience.
+  API design is one of the most difficult aspect of the project.
+\end{rSubsection}
+
 \begin{rSubsection}{PlayDrone}{2012 -- 2014}{Google Play Crawler}{\url{https://github.com/nviennot/playdrone}}
-\item PlayDrone is the first scalable Google Play store crawler. We used it to index and analyze over 1.1M applications.
-\item We discovered numerous OAuth credential leaks. We communicated with Facebook,
+\item PlayDrone is the first scalable Google Play crawler. We used it to analyze the source code of over 1.1M applications.
+\item We discovered numerous OAuth credential leaks. We collaborated with Facebook,
     Google and Amazon to mitigate the issues, making the Google Play store a safer place.
-\item PlayDrone was used at archive.org to provide a full dump of the Google Play market for other researchers.
+\item PlayDrone was used at archive.org to provide a full dump of the Google Play store for other researchers.
 \end{rSubsection}
 
 \begin{rSubsection}{Scribe}{2008 -- 2012}{Deterministic Record-Replay Engine}{\url{https://github.com/nviennot/linux-2.6-scribe}}
@@ -165,8 +167,10 @@ Dora is a mutable replay engine which enables reproducing non-deterministic bugs
 \end{rSubsection}
 
 \begin{rSubsection}{Reflow Oven}{2004 -- 2005}{\url{http://viennot.com/reflow\_oven.pdf}}{}
-\item Designed a standalone reflow oven used to solder components on a circuit board from scratch.
-\item The oven features 2kW of infrared heat, controlled with a PID feedback loop.
+\item Designed a reflow oven used to solder components on a circuit board from scratch.
+\item The oven features 2kW of infrared heat, allowing surfaces to reach
+      $200\degree$C in 30s. The heating elements are controlled by a standalone
+      electronic board that enforces a precise temperature profile with a PID feedback loop.
 \end{rSubsection}
 
 % \item reverse engineering
@@ -238,7 +242,7 @@ Dora is a mutable replay engine which enables reproducing non-deterministic bugs
 \begin{rSection}{Skills}
 \begin{rList}
 \item Strongest programming languages: Ruby, C, JavaScript, HTML/CSS, Python, x86 assembly.
-\item Hobbies: Photography
+\item Hobbies: Photography with a focus on headshot and street photography.
 \item Native French speaker, fluent in English.
 \end{rList}
 \end{rSection}
